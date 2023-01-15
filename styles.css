@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  border-radius: 3px;
+}
+
+.display {
+  background-color: rgb(242, 219, 219);
+  width: 340px;
+  max-height: 420px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 2px;
+}
+
+.display-info {
+  width: 320px;
+  min-height: 60px;
+  background-color: rgb(239, 156, 4);
+  word-wrap: break-word;
+  padding: 0 5px;
+  margin: 5px 0;
+  text-align: center;
+  color: blue;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(75, 73, 73);
+  box-shadow: 3px 3px 3px gray;
+  border-radius: 4px;
+}
+
+.space {
+  margin-bottom: -20px;
+}
+
+.toggle-power {
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+.outer {
+  width: 90px;
+  height: 30px;
+  background-color: black;
+  margin-left: auto;
+}
+
+.inner {
+  width: 44px;
+  height: 30px;
+  background-color: red;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner p {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.inner-active {
+  background-color: blue;
+}
+
+.box-active {
+  background-color: rgb(239, 156, 4);
+}
+
+.vol-speed-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.adjuster {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recording-btn {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.records {
+  width: 200px;
+  min-height: 60px;
+  background-color: rgb(239, 156, 4);
+  word-wrap: break-word;
+  padding: 0 5px;
+  color: blue;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn1 {
+  background-color: rgb(5, 231, 46);
+}
+
+.btn2 {
+  background-color: rgb(145, 6, 6);
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .display {
+    width: 264px;
+    padding: 3px;
+  }
+
+.display-info {
+  width: 252px;
+
+}
+
+  .box {
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+  }
+
+  .vol-speed-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .records {
+    width: 300px;
+  }
+
+  .power {
+    margin-top: 20px;
+  }
+
+  .recording-btn {
+    margin-top: 20px;
+  }
+
+}
